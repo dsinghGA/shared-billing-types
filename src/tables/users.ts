@@ -2,18 +2,19 @@ export interface RolesContract {
   id: unknown;
   is_synced: unknown;
   is_deleted: unknown;
+  created_at: unknown;
   last_updated_at: unknown;
   name: unknown;
   slug: unknown;
   description: unknown;
   is_active: unknown;
-  created_at: unknown;
 }
 
 export interface RolePermissionsContract {
   id: unknown;
   is_synced: unknown;
   is_deleted: unknown;
+  created_at: unknown;
   last_updated_at: unknown;
   role_id: unknown;
   resource: unknown;
@@ -29,6 +30,7 @@ export interface UsersContract {
   company_id: unknown;
   is_synced: unknown;
   is_deleted: unknown;
+  created_at: unknown;
   last_updated_at: unknown;
   name: unknown;
   email: unknown;
@@ -46,7 +48,9 @@ export interface DevicesContract {
   company_id: unknown;
   is_synced: unknown;
   is_deleted: unknown;
+  created_at: unknown;
   last_updated_at: unknown;
+  device_unique_id: unknown;
   device_name: unknown;
   prefix: unknown;
   is_authorized: unknown;

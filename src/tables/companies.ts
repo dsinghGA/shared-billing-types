@@ -1,5 +1,9 @@
 export interface CompaniesContract {
   id: unknown;
+  is_synced: unknown;
+  is_deleted: unknown;
+  created_at: unknown;
+  last_updated_at: unknown;
   name: unknown;
   email: unknown;
   phone: unknown;
@@ -14,5 +18,4 @@ export interface CompaniesContract {
   address: unknown;
   gstin: unknown;
   signature_url: unknown;
-  created_at: unknown;
 }

@@ -3,6 +3,7 @@ export interface InvoicesContract {
   company_id: unknown;
   is_synced: unknown;
   is_deleted: unknown;
+  created_at: unknown;
   last_updated_at: unknown;
   invoice_number: unknown;
   party_id: unknown;
@@ -22,6 +23,8 @@ export interface InvoicesContract {
   round_off: unknown;
   payment_status: unknown;
   payment_mode: unknown;
+  transaction_type_id: unknown;
+  transaction_tax_percent: unknown;
 }
 
 export interface InvoiceItemsContract {
@@ -29,6 +32,7 @@ export interface InvoiceItemsContract {
   company_id: unknown;
   is_synced: unknown;
   is_deleted: unknown;
+  created_at: unknown;
   last_updated_at: unknown;
   invoice_id: unknown;
   item_id: unknown;
@@ -42,18 +46,34 @@ export interface InvoiceItemsContract {
   igst_rate: unknown;
   igst_amount: unknown;
   total: unknown;
+  free_qty: unknown;
+  discount_percent: unknown;
+  discount_amount: unknown;
+  final_taxable_value: unknown;
 }
 
 export interface InvoiceAdditionalChargesContract {
   id: unknown;
+  company_id: unknown;
+  is_synced: unknown;
+  is_deleted: unknown;
+  created_at: unknown;
+  last_updated_at: unknown;
   invoice_id: unknown;
   name: unknown;
   amount: unknown;
   tax_rate: unknown;
+  tax_amount: unknown;
+  enable_tax: unknown;
 }
 
 export interface InvoicePaymentsContract {
   id: unknown;
+  company_id: unknown;
+  is_synced: unknown;
+  is_deleted: unknown;
+  created_at: unknown;
+  last_updated_at: unknown;
   invoice_id: unknown;
   amount: unknown;
   mode: unknown;
@@ -63,6 +83,10 @@ export interface InvoicePaymentsContract {
 export interface InvoicePrefixesContract {
   id: unknown;
   company_id: unknown;
+  is_synced: unknown;
+  is_deleted: unknown;
+  created_at: unknown;
+  last_updated_at: unknown;
   type: unknown;
   prefix: unknown;
   current_number: unknown;
